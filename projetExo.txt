@@ -1,0 +1,12 @@
+Faire un blog. Les utilisateurs peuvent créer leurs compte pour faire des articles .
+ Un utilisateur ne peu modifier que les articles que lui il a créer. Un admin peut modifier tout les articles de tout le monde. 
+
+-blog avec utilisateurs et admins
+-utilisateur peut créer un article mais ne peut modifier ou supprimer que son article
+-1ere chose à faire faire l'aborescence de vos dossiers (config,app,public)
+- dans app (controller, views)
+- index php à la racine du projet
+- dans config => router et db.php & function
+- commencer par afficher tous les éléments puis une route avec un affichage individuel
+-s'il y a un create il y a forcément un formulaire et donc une view
+- finir par le blocage des routes et l'affichage de certaines pages pour admins & utilisateurs
