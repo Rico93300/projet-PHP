@@ -20,11 +20,6 @@ $routes = [
 ];
 
 
-
-
-
-
-
 if (array_key_exists($uri, $routes)) {
 
     require_once(__DIR__ . "/../app/Controllers/" . $routes[$uri]);

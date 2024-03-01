@@ -1,7 +1,7 @@
 <?php
 $title= "create article";
 require_once(__DIR__ . "/partials/head.php") ?>
-?>
+
 <h1>  create article</h1>
  <form action="/article-create" method="post">
     <div>

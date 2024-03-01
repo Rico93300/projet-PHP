@@ -32,28 +32,29 @@
             <li class="nav-item">
                 <a class="nav-link" href="/article-create">article create</a>
             </li>
-
-            <?php if (isset($_SESSION['user'])) { ?>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="/admin">Admin</a>
+           
+                <?php if (isset($_SESSION['user'])) { ?>
                 <li class="nav-item">
                     <a class="nav-link" href=" logout"> Logout</a>
                 </li>
+              
             <?php
 
             } else { ?>
                 <li class="nav-item">
                     <a class="nav-link" href="login"> Login </a>
+                    <li class="nav-item">
+                <a class="nav-link" href="/register">Register</a>
+            </li>
                 </li><?php } ?>
 
 
 
 
-            <li class="nav-item">
-                <a class="nav-link" href="/register">Register</a>
-            </li>
-
-
-            <li class="nav-item">
-                <a class="nav-link" href="/admin">Admin</a>
+          
             </li>
             <!-- <li class="nav-item">
                 <a class="nav-link" href="/mentions-legales">Mentions Legales</a>
