@@ -17,6 +17,7 @@ $routes = [
     '/article-create' => 'articleCreateController.php',
     '/article-update' => 'articleUpdateController.php',
     '/article-delete' => 'articleDeleteController.php',
+    '/connect' => 'connectController.php',
 ];
 
 

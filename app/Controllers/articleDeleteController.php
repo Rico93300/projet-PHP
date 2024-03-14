@@ -1,7 +1,7 @@
 <?php
 
 
-if (isset($_GET['id'])) {
+if (isset($_GET['id'])&& isset($_SESSION['user'])) {
     $id = $_GET['id'];
 
     $articleQuery = "DELETE  FROM article WHERE id = :id";

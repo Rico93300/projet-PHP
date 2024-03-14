@@ -20,4 +20,7 @@ require_once(__DIR__ . "/partials/head.php") ?>
 <button type="submit"> create</button>
 </form>
 
-<?php require_once(__DIR__ . "/partials/footer.php") ?>
+<?php require_once(__DIR__ . "/partials/footer.php");
+if (isset($error)) {
+    echo "<p class='text-danger'>" . $error . "</p>";
+} ?>

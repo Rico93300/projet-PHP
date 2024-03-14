@@ -29,16 +29,23 @@
             <li class="nav-item">
                 <a class="nav-link" href="/article">Article</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/article-create">article create</a>
-            </li>
             
+            <?php if (isset($_SESSION['user']) && $_SESSION['user']['admin'] == true) { ?>
             <li class="nav-item">
                 <a class="nav-link" href="/admin">Admin</a>
+            </li>
+                <?php } ?>
            
                 <?php if (isset($_SESSION['user'])) { ?>
                 <li class="nav-item">
                     <a class="nav-link" href=" logout"> Logout</a>
+                    </li>
+                    <li class="nav-item">
+                <a class="nav-link" href="/connect">connect</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/article-create">article create</a>
+            </li>
                 </li>
               
             <?php
